@@ -95,6 +95,14 @@
                <div class="content">
                     <p>===============================================</p>
                     <p> <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generating a new SSH key and adding it to the ssh agent </a></p>
+                    <p>#ssh-keygen -t rsa -b 4096 -C "jerry.li@letote.cn" -f ~/.ssh/jerryGithub </p>
+                    <p>#vim ~/.ssh/config</p>
+                    <p>Host github</p>
+                    <p>user jerryli-letotecn</p>
+                    <p>hostname https://github.com</p>
+                    <p>AddKeysToAgent yes</p>
+                    <p>UseKeychain yes</p>
+                    <p>IdentityFile ~/.ssh/jerryGithub</p>
                     <p><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Adding a new SSH key to your GitHub account</a></p>
                  </div>
               </div>
